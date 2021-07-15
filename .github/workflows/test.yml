@@ -1,7 +1,7 @@
 on: push
 
 defaults:
-  run:
+  uses:
     working-directory: ./frontend
 
 jobs:
