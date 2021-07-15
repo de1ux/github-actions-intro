@@ -3,6 +3,9 @@ on: push
 jobs:
   test:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./frontend
 
     steps:
     - uses: actions/checkout@v2
@@ -11,11 +14,9 @@ jobs:
         node-version: '14'
     - name: Install and run Jest
       run: |
-        cd frontend
         npm i
         npm test
     - name: Run Cypress
-      working-directory: ./frontend
       uses: cypress-io/github-action@v2
       with:
         start: npm start
