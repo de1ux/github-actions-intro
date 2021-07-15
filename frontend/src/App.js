@@ -20,7 +20,7 @@ function App() {
     }, [])
 
     return (
-        <div>
+        <div data-cy="app">
             {stateToMessage[pingState]}
         </div>
     );
