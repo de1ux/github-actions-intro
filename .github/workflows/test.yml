@@ -17,6 +17,5 @@ jobs:
 
     - name: Run Cypress
       uses: cypress-io/github-actions@v2
-      run: |
-        cd frontend
-        ./node_modules/.bin/cypress run
+      with: |
+        npm start
