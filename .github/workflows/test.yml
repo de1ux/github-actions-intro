@@ -43,7 +43,7 @@ jobs:
       run: |
         cd frontend
         npm i
-        npm build
+        npm run build
     - uses: gonuit/heroku-docker-deploy@v1.3.3
       with:
         heroku_api_key: ${{secrets.HEROKU_API_KEY}}
