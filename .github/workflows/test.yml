@@ -11,6 +11,6 @@ jobs:
         node-version: '14'
         cache: 'npm'
     - run: |
-      cd frontend
-      npm i
-      npm test
+        cd frontend
+        npm i
+        npm test
