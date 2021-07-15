@@ -16,6 +16,7 @@ jobs:
         npm test
 
     - name: Run Cypress
+      working-directory: frontend
       uses: cypress-io/github-action@v2
       with:
         start: npm start
